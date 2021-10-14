@@ -1,0 +1,129 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+.input-control {
+     margin: 40px 0 40px 40px;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+}
+
+.control-label {
+     font-family: 'Noto Sans JP';
+     top: -19px;
+     line-height: 17px;
+     font-size: 12px;
+     font-weight: 400;
+     color: #333333;
+     font-style: normal;
+     width: 31px;
+     height: 17px;
+     position: absolute;
+}
+
+.text-input {
+     font-family: 'Noto Sans JP';
+     border: 1px solid #828282;
+     font-style: normal;
+     border-radius: 8px;
+     line-height: 20px;
+     font-weight: 500;
+     font-size: 14px;
+     width: 200px;
+     height: 56px;
+     padding: 18px 0 18px 12px;
+}
+.helper-text {
+     padding-top: 3px;
+     font-family: 'Noto Sans JP';
+     color: #828282;
+     font-size: 10px;
+     line-height: 14px;
+     font-style: normal;
+     font-weight: 400;
+}
+.icon-start {
+     color: #828282;
+     position: absolute;
+     top: 15px;
+     left: 7px;
+}
+.icon-end {
+     color: #828282;
+     position: absolute;
+     top: 15px;
+     left: 168px;
+}
+
+.text-input[startIcon] {
+     padding: 18px 0 18px 45px;
+}
+
+.text-input[endIcon] {
+     padding: 18px 26px 18px 13px;
+}
+
+input[error][hover] {
+     border: 1px solid #d32f2f;
+     + .control-label {
+          color: #d32f2f;
+     }
+
+     &:focus {
+          border: 1px solid #d32f2f;
+          + .control-label {
+               color: #d32f2f;
+          }
+     }
+}
+.text-input[sizes='sm'] {
+     height: 40px;
+     padding: 10px 0 10px 12px;
+}
+
+.text-input[fullWidth] {
+     width: 100%;
+}
+.text-input[multiline] {
+     height: 150px;
+     padding: 18px 0 112px 12px;
+}
+
+input[error] {
+     border: 1px solid #d32f2f;
+     + .control-label {
+          color: #d32f2f;
+     }
+}
+.helper-text[error] {
+     color: #d32f2f;
+}
+
+input[disabled] {
+     border: 1px solid #e0e0e0;
+     background-color: #f2f2f2;
+     &:hover {
+          border: 1px solid #e0e0e0;
+          background-color: #f2f2f2;
+     }
+}
+
+input[hover]:hover {
+     border: 1px solid #333333;
+     + .control-label {
+          color: #333333;
+     }
+}
+
+input[focus]:focus {
+     border: 1px solid #2962ff;
+     + .control-label {
+          color: #2962ff;
+     }
+}
+
+input:focus-visible {
+     outline: none;
+}
