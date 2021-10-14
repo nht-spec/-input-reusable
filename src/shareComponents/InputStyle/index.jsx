@@ -34,15 +34,13 @@ function InputStyle({
                     id={id}
                     placeholder='Placeholder'
                ></input>
-
-               {startIcon ? <PhoneIcon className='icon-start' /> : ''}
-               {endIcon ? <HttpsRoundedIcon className='icon-end' /> : ''}
-               <label class='control-label' for={id}>
-                    Label
-               </label>
+               <label class='control-label'>Label</label>
                <span error={errors} className='helper-text'>
                     {helperText}
                </span>
+
+               {startIcon ? <PhoneIcon className='icon-start' /> : ''}
+               {endIcon ? <HttpsRoundedIcon className='icon-end' /> : ''}
           </div>
      );
 }

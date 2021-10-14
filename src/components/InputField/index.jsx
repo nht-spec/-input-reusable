@@ -9,15 +9,23 @@ function InputField(props) {
                <InputStyle id='input1' focus='true' hover='true' />
                <InputStyle errors='true' hover='true' />
                <InputStyle disabled='true' />
-               <InputStyle helperText='Some interesting text' />
-               <InputStyle errors='true' helperText='Some interesting text' />
-               <InputStyle startIcon='true' />
-               <InputStyle endIcon='true' />
-               <InputStyle value='Text' />
-               <InputStyle size='sm' />
-               <InputStyle size='md' />
-               <InputStyle fullWidth='true' />
-               <InputStyle multiline='row:4' />
+               <InputStyle
+                    focus='true'
+                    hover='true'
+                    helperText='Some interesting text'
+               />
+               <InputStyle
+                    errors='true'
+                    hover='true'
+                    helperText='Some interesting text'
+               />
+               <InputStyle focus='true' hover='true' startIcon='true' />
+               <InputStyle focus='true' hover='true' endIcon='true' />
+               <InputStyle focus='true' hover='true' value='Text' />
+               <InputStyle focus='true' hover='true' size='sm' />
+               <InputStyle focus='true' hover='true' size='md' />
+               <InputStyle focus='true' hover='true' fullWidth='true' />
+               <InputStyle focus='true' hover='true' multiline='row:4' />
           </div>
      );
 }
